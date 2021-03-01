@@ -1,0 +1,23 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto">
+        <h1 class="text-center display-4 my-4" >Upload Service</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+      				<label for="usr">Image Title</label>
+      				<input class="form-control" type="text" id="name" placeholder="Name" value="" name="name" required>
+      			</div>
+      			<div class="form-group">
+      				<label for="comment">Image Description</label>
+      				<textarea class="form-control" type="text" id="desc"  placeholder="Description" value="" name="desc" required>
+      				</textarea>
+  			   </div>
+          <div class="custom-file mb-3">
+            <input type="file" id="image" name="image" class="custom-file-input">
+            <label for="file" class="custom-file-label">Choose file</label>
+            <input type="submit" value="Submit" class="btn btn-primary btn-block my-4">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

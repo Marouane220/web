@@ -1,0 +1,15 @@
+<h1 class="text-center mb-3 my-5">Uplaoded Images</h1>
+	<div class="text mb-3 my-4 m-auto" >
+		<% items.forEach(function(image) { %>
+		<div class="row my-3 text-center">
+			<div class="col">
+				<img style="width: 30%" src="data:image/<%=image.img.contentType%>;base64,
+					<%=image.img.data.toString('base64')%>">
+				<h5><%= image.name %></h5>
+			</div>
+			<div class="col col-auto">
+					<h1><%= image.desc %></h1>
+			</div>
+		</div>
+		<% }) %>
+	</div>
